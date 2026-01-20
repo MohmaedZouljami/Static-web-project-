@@ -1,0 +1,129 @@
+.top-balk {
+    width: 100%;
+    height: 60px;
+    background-color: blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+
+.woorden {
+    color: white;
+    width: 20%;
+    height: 50px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-left: 100px;
+}
+
+body {
+    margin: 0;
+    padding-top: 80px;
+    font-family: Arial, sans-serif;
+}
+
+.zoek-container {
+    background-color: #f8f9fa;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.zoek-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.grote-zoekbalk {
+    padding: 18px 20px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 18px;
+    width: 500px;
+    background-color: white;
+    transition: border-color 0.3s;
+}
+
+.grote-zoekbalk:focus {
+    border-color: #0066cc;
+    outline: none;
+}
+
+.postcode-input {
+    padding: 18px 20px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 18px;
+    width: 180px;
+    background-color: white;
+}
+
+.zoek-button {
+    padding: 18px 40px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+zoek-button:hover {
+    background-color: #0052a3;
+}
+
+
+.producten-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.product-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.prijs {
+    color: #0066cc;
+    font-weight: bold;
+    font-size: 16px;
+}
