@@ -1,21 +1,42 @@
+#logo {
+    width: 5%;
+    border-radius: 50px;
+}
+
 .top-balk {
     width: 100%;
     height: 60px;
-    background-color: blue;
+    background-color: #333;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
-    display: flex;           
-    align-items: center;     
-    justify-content: center; 
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .woorden {
-    color: white;           
+    color: white;
     font-family: Arial, sans-serif;
     font-size: 18px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.woorden a {
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.woorden a:hover {
+    background-color: rgba(245, 3, 3, 0.2);
+
 }
 
 body {
@@ -24,8 +45,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
 }
-zoekbalk
-.zoek-container {
+
+zoekbalk .zoek-container {
     background-color: #f8f9fa;
     padding: 30px;
     margin: 40px auto;
@@ -75,10 +96,9 @@ zoekbalk
     font-weight: bold;
 }
 
-zoek-button:hover {
+.zoek-button:hover {
     background-color: #0052a3;
 }
-
 
 .producten-container {
     display: flex;
@@ -94,21 +114,18 @@ zoek-button:hover {
     text-decoration: none;
     color: inherit;
     display: block;
-    flex: 0 0 calc(33.333% - 20px);  
+    flex: 0 0 calc(33.333% - 20px);
     box-sizing: border-box;
-    min-width: 280px; 
+    min-width: 280px;
 }
 
-
 .product-card {
-  background-color: white;
+    background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-    
-
 }
 
 .product-link:hover .product-card {
@@ -144,10 +161,9 @@ zoek-button:hover {
     font-size: 16px;
 }
 
-
 /* apps */
 .app-downloads {
-    text-align: center;  
+    text-align: center;
     padding: 50px 20px;
     margin-top: 60px;
     display: flex;
@@ -157,21 +173,23 @@ zoek-button:hover {
 
 .app-button {
     display: inline-block;
-    margin: 15px;  
+    margin: 15px;
     text-decoration: none;
 }
 
 .app-button img {
-    height: 60px;  
-    width: auto;   
+    height: 60px;
+    width: auto;
 }
-.categorieen-container{
+
+.categorieen-container {
     background-color: white;
     padding: 40px 20px;
     margin: 40px 0;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
+
 .categorieen {
     max-width: 1200px;
     margin: 0 auto;
@@ -207,17 +225,240 @@ zoek-button:hover {
     background-color: #0066cc;
     color: white;
     transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0,102,204,0.2);
+    box-shadow: 0 4px 8px rgba(0, 102, 204, 0.2);
 }
 
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+
+/* Links */
+.footer-column a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    border-top: 1px solid white;
+    padding-top: 10px;
+    
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
 
 @media (max-width: 768px) {
     .app-button {
         display: block;
         margin: 15px auto;
     }
-    
+
     .app-button img {
         height: 50px;
+    }
+}
+
+/* tweedePagina */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.terugknop {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.terugknop:hover {
+    text-decoration: underline;
+}
+
+.product-kop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.foto-gebied {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hoofd-foto {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.thumbnail-rij {
+    display: flex;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.thumbnail:hover {
+    border-color: #0066cc;
+}
+
+.info-gebied {
+    flex: 1;
+    min-width: 300px;
+}
+
+.product-naam {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-prijs {
+    font-size: 24px;
+    color: #0066cc;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.beschrijving {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.beschrijving h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.commentaar-sectie h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.commentaar-rij {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.commentaar-vak img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.commentaar-vak {
+    flex: 1;
+    min-width: 200px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+    
+}
+
+.commentaar-vak2{
+    flex: 1;
+    min-width: 200px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+    
+}
+
+.commentaar-vak h4 {
+    margin-top: 0;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .product-kop {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .foto-gebied,
+    .info-gebied {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .thumbnail-rij {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .commentaar-rij {
+        flex-direction: column;
+    }
+
+    .commentaar-vak {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .zoek-form {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .grote-zoekbalk,
+    .postcode-input,
+    .zoek-button {
+        width: 100%;
+        box-sizing: border-box;
     }
 }
